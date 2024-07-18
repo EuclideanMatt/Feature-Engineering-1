@@ -11,23 +11,23 @@ There were nine categorical features that we deconstructed and/or encoded:
 
 **airline** - _indigo_
 
-date_of_journey - 24/03/2019
+**date_of_journey** - _24/03/2019_
 
-source - banglor
+**source** - _banglor_
 
-destination - new delhi
+**destination** - _new delhi_
 
-route - ccu -> nag -> blr
+**route** - _ccu -> nag -> blr_
 
-dep_time - 22:20
+**dep_time** - _22:20_
 
-arrival_time - 1:10 22 mar
+**arrival_time** - _1:10 22 mar_
 
-duration - 2h 50m
+**duration** - _2h 50m_
 
-total_stops - 2 stops
+**total_stops** -_ 2 stops_
 
-additional_info - in flight meal not included
+**additional_info** - _in flight meal not included_
 
 Features associated with datetime were deconstructed to have each individual associated unit be represented by their own unique feature. Each original feature had to be split into unique characters such as '/', ':', or ' '. Once all the text characters were removed, the new features datatype was then transformed into an integer. The outcome led to three new features associated with date to replace 'date_of_journey': day, month, and year. The 'duration' feature was deconstructed into 'total_duration_by_min'. Lastly, both 'dep_time' and 'arrival_time' were both deconstructed with respect to hour and minute features.
 
