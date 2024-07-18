@@ -9,7 +9,7 @@ I started by reading in the two data sets that came with the data file; a traini
 
 There were nine categorical features that we deconstructed and/or encoded:
 
-airline - indigo
+**airline** - _indigo_
 
 date_of_journey - 24/03/2019
 
