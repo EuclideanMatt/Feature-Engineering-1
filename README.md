@@ -8,15 +8,25 @@ This project will highlight Feature Engineering skills and techniques for catego
 I started by reading in the two data sets that came with the data file; a training and testing set with the testing set missing a price column. The data set describes plane flights and routes. I then did a quick top-level feature analysis of the data to understand feature structures, data types, and missing values (which were removed since there was only a single record with missing values). The two data sets were then concatenated so the cleaning could be applied to both datasets simultaneously. Lastly, some general cleaning was conducted to transform all text characters to lowercase characters
 
 There were nine categorical features that we deconstructed and/or encoded:
+
 airline - indigo
+
 date_of_journey - 24/03/2019
+
 source - banglor
+
 destination - new delhi
+
 route - ccu -> nag -> blr
+
 dep_time - 22:20
+
 arrival_time - 1:10 22 mar
+
 duration - 2h 50m
+
 total_stops - 2 stops
+
 additional_info - in flight meal not included
 
 Features associated with datetime were deconstructed to have each individual associated unit be represented by their own unique feature. Each original feature had to be split into unique characters such as '/', ':', or ' '. Once all the text characters were removed, the new features datatype was then transformed into an integer. The outcome led to three new features associated with date to replace 'date_of_journey': day, month, and year. The 'duration' feature was deconstructed into 'total_duration_by_min'. Lastly, both 'dep_time' and 'arrival_time' were both deconstructed with respect to hour and minute features.
