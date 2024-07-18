@@ -22,7 +22,9 @@ additional_info - in flight meal not included
 Features associated with datetime were deconstructed to have each individual associated unit be represented by their own unique feature. Each original feature had to be split into unique characters such as '/', ':', or ' '. Once all the text characters were removed, the new features datatype was then transformed into an integer. The outcome led to three new features associated with date to replace 'date_of_journey': day, month, and year. The 'duration' feature was deconstructed into 'total_duration_by_min'. Lastly, both 'dep_time' and 'arrival_time' were both deconstructed with respect to hour and minute features.
 
 
-Features associated with locations were broken up and or given unique key values. There were six new features from the deconstruction of 'route': start, stop_1, stop_2, stop_3, stop_4, and stop_5. All of these features were then encoded using the same dictionary of values ensuring that a location would not be encoded twice. The same technique was then executed for the source and destination.
+Features associated with locations were broken up and or given unique key values. There were six new features from the deconstruction of 'route': 
+start, stop_1, stop_2, stop_3, stop_4, and stop_5
+All of these features were then encoded using the same dictionary of values ensuring that a location would not be encoded twice. The same technique was then executed for the source and destination.
 
 With 'total_stops' not being associated with any other feature in this data set, a simple numeric encoding process was initiated.
 
