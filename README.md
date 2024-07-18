@@ -23,7 +23,9 @@ Features associated with datetime were deconstructed to have each individual ass
 
 
 Features associated with locations were broken up and or given unique key values. There were six new features from the deconstruction of 'route': 
+
 start, stop_1, stop_2, stop_3, stop_4, and stop_5
+
 All of these features were then encoded using the same dictionary of values ensuring that a location would not be encoded twice. The same technique was then executed for the source and destination.
 
 With 'total_stops' not being associated with any other feature in this data set, a simple numeric encoding process was initiated.
